@@ -26,10 +26,10 @@ class _UpdateUserState extends State<UpdateUser> {
     DatabaseHandler obj = new DatabaseHandler();
     var data = await obj.getsinglerecorduser(widget.pid);
 
-    user_name.text = data[0]["pname"].toString();
-    user_contact.text = data[0]["description"].toString();
-    user_email.text = data[0]["rprice"].toString();
-    user_password.text = data[0]["sprice"].toString();
+    user_name.text = data[0]["name"].toString();
+    user_contact.text = data[0]["contact"].toString();
+    user_email.text = data[0]["email"].toString();
+    user_password.text = data[0]["password"].toString();
   }
 
   @override
